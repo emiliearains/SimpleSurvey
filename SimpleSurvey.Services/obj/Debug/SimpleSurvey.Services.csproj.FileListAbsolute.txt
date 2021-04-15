@@ -1,0 +1,16 @@
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\bin\Debug\SimpleSurvey.Services.dll.config
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\bin\Debug\SimpleSurvey.Services.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\bin\Debug\SimpleSurvey.Services.pdb
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\bin\Debug\EntityFramework.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\bin\Debug\EntityFramework.xml
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\obj\Debug\SimpleSurvey.Services.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\obj\Debug\SimpleSurvey.Services.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\obj\Debug\SimpleSurvey.Services.csproj.CopyComplete
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\obj\Debug\SimpleSurvey.Services.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Services\obj\Debug\SimpleSurvey.Services.pdb
