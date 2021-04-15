@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace SimpleSurvey.Data
 {
     public class SurveyQuestion
     {
+        [Key]
         public int SurveyQuestionId { get; set; }
         
         [ForeignKey(nameof(Survey))]
@@ -18,6 +20,8 @@ namespace SimpleSurvey.Data
         [ForeignKey(nameof(Question))]
         public int QuestionId { get; set; }
         public virtual Question Question { get; set; }
+
+        [Required]
         public int Order { get; set; }
     }
 }

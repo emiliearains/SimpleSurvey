@@ -55,6 +55,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionChoiceCreate.cs" />
+    <Compile Include="QuestionCreate.cs" />
+    <Compile Include="QuestionDetail.cs" />
+    <Compile Include="QuestionEdit.cs" />
+    <Compile Include="SurveyCreate.cs" />
+    <Compile Include="SurveyDetail.cs" />
+    <Compile Include="SurveyEdit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
