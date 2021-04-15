@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSurvey.Data", "Simple
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSurvey.Contracts", "SimpleSurvey.Contracts\SimpleSurvey.Contracts.csproj", "{4962E92A-318A-40D5-9960-37372A01EB58}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSurvey.Models", "SimpleSurvey.Models\SimpleSurvey.Models.csproj", "{679E64FA-AACE-4A32-8266-FDC20F2BD68E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSurvey.Services", "SimpleSurvey.Services\SimpleSurvey.Services.csproj", "{2E64ACBD-2BC6-422B-8B2F-C9A275DB6908}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{4962E92A-318A-40D5-9960-37372A01EB58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4962E92A-318A-40D5-9960-37372A01EB58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4962E92A-318A-40D5-9960-37372A01EB58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{679E64FA-AACE-4A32-8266-FDC20F2BD68E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{679E64FA-AACE-4A32-8266-FDC20F2BD68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{679E64FA-AACE-4A32-8266-FDC20F2BD68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{679E64FA-AACE-4A32-8266-FDC20F2BD68E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E64ACBD-2BC6-422B-8B2F-C9A275DB6908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E64ACBD-2BC6-422B-8B2F-C9A275DB6908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E64ACBD-2BC6-422B-8B2F-C9A275DB6908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E64ACBD-2BC6-422B-8B2F-C9A275DB6908}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
