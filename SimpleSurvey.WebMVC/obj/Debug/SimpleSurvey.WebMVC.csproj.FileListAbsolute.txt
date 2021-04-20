@@ -115,3 +115,6 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Microsoft.CodeDom.Pr
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\obj\Debug\SimpleSurvey.WebMVC.csproj.CopyComplete
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\obj\Debug\SimpleSurvey.WebMVC.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\obj\Debug\SimpleSurvey.WebMVC.pdb
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Models.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Models.pdb
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Models.dll.config

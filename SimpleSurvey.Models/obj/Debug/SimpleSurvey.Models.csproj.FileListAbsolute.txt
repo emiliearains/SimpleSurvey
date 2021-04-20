@@ -14,3 +14,6 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Models\obj\Debug\SimpleSurvey.M
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Models\obj\Debug\SimpleSurvey.Models.csproj.CopyComplete
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Models\obj\Debug\SimpleSurvey.Models.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Models\obj\Debug\SimpleSurvey.Models.pdb
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Models\bin\Debug\SimpleSurvey.Data.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Models\bin\Debug\SimpleSurvey.Data.pdb
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Models\bin\Debug\SimpleSurvey.Data.dll.config

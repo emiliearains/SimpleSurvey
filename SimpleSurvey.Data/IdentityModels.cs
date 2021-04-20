@@ -16,7 +16,7 @@ namespace SimpleSurvey.Data
         public string LastName { get; set; }
         public string DisplayName { get; set; }
         public bool IsAdmin { get; set; }
-        public DateTime BirthDate { get; set; }
+        //public DateTime BirthDate { get; set; } = DateTime.Now;
         public int GenderCode { get; set; }
         public int Race { get; set; }
         public int Ethnicity { get; set; }
