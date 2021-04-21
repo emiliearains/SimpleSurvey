@@ -55,10 +55,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuestionService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleSurvey.Data\SimpleSurvey.Data.csproj">
+      <Project>{244F9A5A-4C6E-4956-B136-EF70D206C757}</Project>
+      <Name>SimpleSurvey.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleSurvey.Models\SimpleSurvey.Models.csproj">
+      <Project>{679E64FA-AACE-4A32-8266-FDC20F2BD68E}</Project>
+      <Name>SimpleSurvey.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

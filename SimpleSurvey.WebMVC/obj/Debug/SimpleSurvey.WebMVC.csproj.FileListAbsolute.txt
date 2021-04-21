@@ -1,5 +1,3 @@
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\obj\Debug\SimpleSurvey.WebMVC.csprojAssemblyReference.cache
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\obj\Debug\SimpleSurvey.WebMVC.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.WebMVC.dll.config
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.WebMVC.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.WebMVC.pdb
@@ -72,6 +70,8 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Microsoft.Web.Infras
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Newtonsoft.Json.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Owin.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Data.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Models.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Services.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\System.Net.Http.Formatting.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\System.Web.Helpers.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\System.Web.Http.dll
@@ -85,6 +85,12 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\System.Web.WebPages.
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\WebGrease.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Data.pdb
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Data.dll.config
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Models.pdb
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Models.dll.config
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Services.pdb
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Services.dll.config
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\EntityFramework.xml
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\EntityFramework.SqlServer.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\System.Web.Helpers.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\System.Web.Mvc.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\System.Web.Optimization.xml
@@ -97,8 +103,6 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Antlr3.Runtime.pdb
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\System.Net.Http.Formatting.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\System.Web.Http.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\System.Web.Http.WebHost.xml
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\EntityFramework.xml
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\EntityFramework.SqlServer.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Microsoft.AspNet.Identity.Core.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Microsoft.AspNet.Identity.EntityFramework.xml
@@ -112,9 +116,8 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Microsoft.Owin.Secur
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Microsoft.Owin.Security.OAuth.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\obj\Debug\SimpleSurvey.WebMVC.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\obj\Debug\SimpleSurvey.WebMVC.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\obj\Debug\SimpleSurvey.WebMVC.csproj.CopyComplete
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\obj\Debug\SimpleSurvey.WebMVC.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\obj\Debug\SimpleSurvey.WebMVC.pdb
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Models.dll
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Models.pdb
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC\bin\SimpleSurvey.Models.dll.config

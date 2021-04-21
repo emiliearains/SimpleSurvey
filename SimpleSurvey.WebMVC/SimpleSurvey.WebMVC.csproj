@@ -248,6 +248,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Question\Index.cshtml" />
+    <Content Include="Views\Question\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -273,6 +275,10 @@
     <ProjectReference Include="..\SimpleSurvey.Models\SimpleSurvey.Models.csproj">
       <Project>{679e64fa-aace-4a32-8266-fdc20f2bd68e}</Project>
       <Name>SimpleSurvey.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleSurvey.Services\SimpleSurvey.Services.csproj">
+      <Project>{2E64ACBD-2BC6-422B-8B2F-C9A275DB6908}</Project>
+      <Name>SimpleSurvey.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

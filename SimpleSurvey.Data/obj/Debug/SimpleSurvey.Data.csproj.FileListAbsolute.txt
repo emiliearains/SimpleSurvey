@@ -10,9 +10,11 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\bin\Debug\EntityFramework.
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.InitialMigration.resources
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.UpdateMigration.resources
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.QuestionTypeMigration.resources
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csproj.GenerateResource.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.pdb
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.InitialMigration.resources
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csproj.GenerateResource.cache

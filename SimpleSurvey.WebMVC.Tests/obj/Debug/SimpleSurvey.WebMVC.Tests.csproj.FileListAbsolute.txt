@@ -1,5 +1,3 @@
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\obj\Debug\SimpleSurvey.WebMVC.Tests.csprojAssemblyReference.cache
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\obj\Debug\SimpleSurvey.WebMVC.Tests.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
@@ -28,6 +26,8 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsof
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.Owin.Security.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Owin.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\System.Web.Http.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\SimpleSurvey.Services.dll
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\SimpleSurvey.Models.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\System.Web.Http.WebHost.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
@@ -57,12 +57,18 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\SimpleSu
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.Owin.Security.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\System.Web.Http.xml
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\SimpleSurvey.Services.pdb
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\SimpleSurvey.Services.dll.config
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\SimpleSurvey.Models.pdb
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\SimpleSurvey.Models.dll.config
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\System.Web.Http.WebHost.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\System.Net.Http.Formatting.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Antlr3.Runtime.pdb
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\obj\Debug\SimpleSurvey.WebMVC.Tests.csprojAssemblyReference.cache
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\obj\Debug\SimpleSurvey.WebMVC.Tests.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\obj\Debug\SimpleSurvey.WebMVC.Tests.csproj.CopyComplete
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\obj\Debug\SimpleSurvey.WebMVC.Tests.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\obj\Debug\SimpleSurvey.WebMVC.Tests.pdb

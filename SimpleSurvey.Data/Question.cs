@@ -14,6 +14,6 @@ namespace SimpleSurvey.Data
         [Required]
         [MaxLength(500, ErrorMessage = "The maximum length is 500 characters. Please reduce the question text.")]
         public string QuestionText { get; set; }
-        public string QuestionType { get; set; }
+        public int QuestionType { get; set; }
     }
 }
