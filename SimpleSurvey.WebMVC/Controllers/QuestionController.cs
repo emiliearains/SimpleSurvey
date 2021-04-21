@@ -32,7 +32,7 @@ namespace SimpleSurvey.WebMVC.Controllers
         }
 
         [HttpPost]
-        public ActionResult CreateQuestion(QuestionCreate model)
+        public ActionResult Create(QuestionCreate model)
         {
             if (!ModelState.IsValid) return View(model);
 
@@ -40,11 +40,30 @@ namespace SimpleSurvey.WebMVC.Controllers
 
             if (service.CreateQuestion(model))
             {
-                TempData["SaveResult"] = "Your question was created.";
+                ViewBag.SaveResult = "Question is created.";
                 return RedirectToAction("Index");
             };
 
             ModelState.AddModelError("", "Question could not be created.");
+            return View(model);
+        }
+        public ActionResult Details(int id)
+        {
+            var svc = new QuestionService();
+            var model = svc.GetQuestionById(id);
+            return View(model);
+        }
+            
+        public ActionResult Edit(int id)
+        {
+            var svc = new QuestionService();
+            var detail = svc.GetQuestionById(id);
+            var model =
+                new QuestionEdit
+                {
+                    QuestionText = detail.QuestionText,
+                    QuestionType = detail.QuestionType
+                };
             return View(model);
         }
     }

@@ -42,5 +42,22 @@ namespace SimpleSurvey.Services
                 return query.ToArray();
             }
         }
+
+        public QuestionDetail GetQuestionById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Questions
+                        .Single(e => e.QuestionId == id);
+                return
+                    new QuestionDetail
+                    {
+                        QuestionText = entity.QuestionText,
+                        QuestionType = entity.QuestionType
+                    };
+            }
+        }
     }
 }
