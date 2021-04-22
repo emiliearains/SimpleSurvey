@@ -37,7 +37,8 @@ namespace SimpleSurvey.Services
             {
                 var query =
                     ctx
-                        .Questions;
+                        .Questions
+                        .Where(e => e.IsActive == true);
                         
                 return query.ToArray();
             }

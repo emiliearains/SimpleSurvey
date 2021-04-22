@@ -16,5 +16,6 @@ namespace SimpleSurvey.Models
 
         [MaxLength(200, ErrorMessage = "Maximum question type is 200 characters.")]
         public int QuestionType { get; set; }
+        public bool IsActive { get; set; }
     }
 }
