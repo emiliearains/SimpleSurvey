@@ -61,8 +61,8 @@ namespace SimpleSurvey.WebMVC.Controllers
             var model =
                 new QuestionEdit
                 {
-                    QuestionText = detail.QuestionText,
-                    QuestionType = detail.QuestionType,
+                    // QuestionText = detail.QuestionText,
+                    // QuestionType = detail.QuestionType,
                     IsActive = detail.IsActive
                 };
             return View(model);

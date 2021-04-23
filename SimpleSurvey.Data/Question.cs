@@ -7,6 +7,14 @@ using System.Threading.Tasks;
 
 namespace SimpleSurvey.Data
 {
+    public enum QuestionType
+    {
+        OpenEnded,      
+        MultipleChoice,
+        OrdinalScale,
+        IntervalScale,  
+        RatioScale
+    }
     public class Question
     {
         [Key]

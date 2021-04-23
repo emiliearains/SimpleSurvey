@@ -24,6 +24,7 @@ namespace SimpleSurvey.Services
                 {
                     QuestionText = model.QuestionText,
                     QuestionType = model.QuestionType,
+                    IsActive = model.IsActive
                 };
             using (var ctx = new ApplicationDbContext())
             {
