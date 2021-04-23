@@ -9,13 +9,14 @@ namespace SimpleSurvey.Models
 {
     public class QuestionDetail
     {
+        public int QuestionDetailId { get; set; }
         [Required]
         [MinLength(5, ErrorMessage = "Minimum question length is at least 5 characters.")]
         [MaxLength(200, ErrorMessage = "Maximum question length is 200 characters.")]
         public string QuestionText { get; set; }
 
-        [MaxLength(200, ErrorMessage = "Maximum question type is 200 characters.")]
         public int QuestionType { get; set; }
         public bool IsActive { get; set; }
+        List<QuestionChoiceDetails> QuestionChoices { get; set; }
     }
 }

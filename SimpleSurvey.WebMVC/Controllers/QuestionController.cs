@@ -50,7 +50,13 @@ namespace SimpleSurvey.WebMVC.Controllers
         public ActionResult Details(int id)
         {
             var svc = new QuestionService();
-            var model = svc.GetQuestionById(id);
+            var question = svc.GetQuestionById(id);
+            var model = new QuestionDetail
+            {
+                QuestionText = question.QuestionText,
+                QuestionType = question.QuestionType,
+                IsActive = question.IsActive
+            };
             return View(model);
         }
             

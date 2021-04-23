@@ -45,7 +45,7 @@ namespace SimpleSurvey.Services
             }
         }
 
-        public QuestionDetail GetQuestionById(int id)
+        public Question GetQuestionById(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -53,12 +53,12 @@ namespace SimpleSurvey.Services
                     ctx
                         .Questions
                         .Single(e => e.QuestionId == id);
-                return
-                    new QuestionDetail
-                    {
-                        QuestionText = entity.QuestionText,
-                        QuestionType = entity.QuestionType
-                    };
+                return entity;
+                    //new QuestionDetail
+                    //{
+                    //    QuestionText = entity.QuestionText,
+                    //    QuestionType = entity.QuestionType
+                    //};
             }
         }
     }
