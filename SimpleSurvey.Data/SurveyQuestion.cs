@@ -12,7 +12,7 @@ namespace SimpleSurvey.Data
     {
         [Key]
         public int SurveyQuestionId { get; set; }
-        
+
         [ForeignKey(nameof(Survey))]
         public int SurveyId { get; set; }
         public virtual Survey Survey { get; set; }
@@ -20,6 +20,12 @@ namespace SimpleSurvey.Data
         [ForeignKey(nameof(Question))]
         public int QuestionId { get; set; }
         public virtual Question Question { get; set; }
+
+        //public virtual ICollection<Question> ListOfQuestions { get; set; }
+        //public SurveyQuestion()
+        //{
+        //    ListOfQuestions = new HashSet<Question>();
+        //}
 
         [Required]
         public int Order { get; set; }

@@ -25,13 +25,17 @@ namespace SimpleSurvey.Services
                     QuestionText = model.QuestionText,
                     QuestionType = model.QuestionType,
                     IsActive = model.IsActive
+
                 };
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Questions.Add(entity);
-                return ctx.SaveChanges() == 1;
+                ctx.SaveChanges();
+                PopulateQuestionChoices(entity.QuestionId);
             }
+            return true;
         }
+        // GET: All active questions
         public IEnumerable<Question> GetQuestions()
         {
             using (var ctx = new ApplicationDbContext())
@@ -45,6 +49,7 @@ namespace SimpleSurvey.Services
             }
         }
 
+        // GET: QuestionById
         public Question GetQuestionById(int id)
         {
             using (var ctx = new ApplicationDbContext())
@@ -54,12 +59,43 @@ namespace SimpleSurvey.Services
                         .Questions
                         .Single(e => e.QuestionId == id);
                 return entity;
-                    //new QuestionDetail
-                    //{
-                    //    QuestionText = entity.QuestionText,
-                    //    QuestionType = entity.QuestionType
-                    //};
             }
         }
+
+        public List<QuestionChoice> GetQuestionChoicesByQuestionId(int questionId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .QuestionChoices
+                        .Where(x => x.QuestionId == questionId)
+                        .ToList();
+                return entity;
+            }
+        }
+
+        private bool PopulateQuestionChoices(int questionId)
+        {
+            List<QuestionChoice> questionChoices = new List<QuestionChoice>();
+
+            questionChoices.Add(new QuestionChoice() { QuestionChoiceText = "Strongly Agree", QuestionChoiceValue = 5, QuestionId = questionId });
+
+            questionChoices.Add(new QuestionChoice() { QuestionChoiceText = "Agree", QuestionChoiceValue = 4, QuestionId = questionId });
+
+            questionChoices.Add(new QuestionChoice() { QuestionChoiceText = "Neither Agree nor Disagree", QuestionChoiceValue = 3, QuestionId = questionId });
+
+            questionChoices.Add(new QuestionChoice() { QuestionChoiceText = "Disagree", QuestionChoiceValue = 2, QuestionId = questionId });
+
+            questionChoices.Add(new QuestionChoice() { QuestionChoiceText = "Strongly Disagree", QuestionChoiceValue = 1, QuestionId = questionId });
+
+            using (var ctx = new ApplicationDbContext())
+            {
+                ctx.QuestionChoices.AddRange(questionChoices);
+                return ctx.SaveChanges() == 1;
+            }
+          
+        }
+
     }
 }

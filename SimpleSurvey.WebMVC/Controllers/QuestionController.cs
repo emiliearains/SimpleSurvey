@@ -1,4 +1,5 @@
-﻿using SimpleSurvey.Models;
+﻿using SimpleSurvey.Data;
+using SimpleSurvey.Models;
 using SimpleSurvey.Services;
 using System;
 using System.Collections.Generic;
@@ -51,11 +52,18 @@ namespace SimpleSurvey.WebMVC.Controllers
         {
             var svc = new QuestionService();
             var question = svc.GetQuestionById(id);
+            var questionDetails = svc.GetQuestionChoicesByQuestionId(id).Select(x => new QuestionChoiceDetails()
+            {
+                QuestionChoiceText = x.QuestionChoiceText,
+                QuestionChoiceValue = x.QuestionChoiceValue
+            }).ToList();
             var model = new QuestionDetail
             {
                 QuestionText = question.QuestionText,
-                QuestionType = question.QuestionType,
-                IsActive = question.IsActive
+                QuestionType = Enum.GetName(typeof(QuestionType), question.QuestionType),
+                QuestionChoiceText = questionDetails
+
+
             };
             return View(model);
         }
@@ -74,6 +82,16 @@ namespace SimpleSurvey.WebMVC.Controllers
             return View(model);
         }
 
+
+
+
+
+
+
+
+        // Helper method
+        
+            
 
     }
 }
