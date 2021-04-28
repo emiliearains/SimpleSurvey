@@ -29,6 +29,7 @@ namespace SimpleSurvey.WebMVC.Controllers
 
         public ActionResult Create()
         {
+            
             return View();
         }
 
@@ -75,8 +76,6 @@ namespace SimpleSurvey.WebMVC.Controllers
             var model =
                 new QuestionEdit
                 {
-                    // QuestionText = detail.QuestionText,
-                    // QuestionType = detail.QuestionType,
                     IsActive = detail.IsActive
                 };
             return View(model);

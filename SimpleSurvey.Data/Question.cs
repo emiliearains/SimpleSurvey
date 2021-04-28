@@ -9,11 +9,11 @@ namespace SimpleSurvey.Data
 {
     public enum QuestionType
     {
-        OpenEnded,      
-        MultipleChoice,
-        OrdinalScale,
-        IntervalScale,  
-        RatioScale
+        OpenEnded,          // text box
+        MultipleChoice,     // check box or radio buttons or drop down
+        OrdinalScale,       // naturally occuring order and unknown difference
+        IntervalScale,      // there is order and difference is meaningful, no true zero
+        RatioScale          // differences between measurements, true zero exists
     }
     public class Question
     {
