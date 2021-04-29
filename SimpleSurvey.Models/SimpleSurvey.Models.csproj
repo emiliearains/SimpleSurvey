@@ -62,9 +62,11 @@
     <Compile Include="QuestionDetail.cs" />
     <Compile Include="QuestionEdit.cs" />
     <Compile Include="QuestionListItem.cs" />
+    <Compile Include="QuestionSelectList.cs" />
     <Compile Include="SurveyCreate.cs" />
     <Compile Include="SurveyDetail.cs" />
     <Compile Include="SurveyEdit.cs" />
+    <Compile Include="SurveyQuestionDetails.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

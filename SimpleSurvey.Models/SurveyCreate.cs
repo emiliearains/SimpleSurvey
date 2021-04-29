@@ -23,5 +23,6 @@ namespace SimpleSurvey.Models
         
         [Required]
         public DateTime EndDate { get; set; }
+        public List<int> SelectedSurveyQuestions { get; set; }
     }
 }

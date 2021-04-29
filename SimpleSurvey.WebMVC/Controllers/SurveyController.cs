@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using SimpleSurvey.Data;
+using SimpleSurvey.Models;
+using SimpleSurvey.Services;
 
 namespace SimpleSurvey.WebMVC.Controllers
 {
@@ -23,21 +25,52 @@ namespace SimpleSurvey.WebMVC.Controllers
         // GET: Survey/Details/5
         public ActionResult Details(int? id)
         {
+            QuestionService _questionService = new QuestionService();
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Survey survey = db.Surveys.Find(id);
+            List<Question> questions = _questionService.GetQuestionsBySurveyId(survey.SurveyId);
+            List<QuestionDetail> questionDetails = questions.Select(x => new QuestionDetail()
+            {
+                QuestionText = x.QuestionText,
+                QuestionType = Enum.GetName(typeof(QuestionType), x.QuestionType),
+                QuestionChoiceText = _questionService.GetQuestionChoicesByQuestionId(x.QuestionId)
+                                                        .Select(y => new QuestionChoiceDetails()
+                                                        {
+                                                            QuestionChoiceText = y.QuestionChoiceText,
+                                                            QuestionChoiceValue = y.QuestionChoiceValue
+                                                        }).ToList()
+            }).ToList();
+
+            SurveyDetail surveyDetail = new SurveyDetail()
+            {
+                SurveyTitle = survey.SurveyTitle,
+                SurveyDescription = survey.SurveyDescription,
+                StartDate = survey.StartDate,
+                EndDate = survey.EndDate,
+                SurveyQuestions = questionDetails 
+            };
+
             if (survey == null)
             {
                 return HttpNotFound();
             }
-            return View(survey);
+            return View(surveyDetail);
         }
 
         // GET: Survey/Create
         public ActionResult Create()
         {
+            QuestionService _questionService = new QuestionService();
+            List<QuestionSelectList> questionList = _questionService.GetQuestions().Select(x => new QuestionSelectList()
+            {
+                QuestionId = x.QuestionId,
+                QuestionText = x.QuestionText
+            }).ToList();
+            ViewBag.QuestionSelectList = questionList;
+
             return View();
         }
 
@@ -46,12 +79,49 @@ namespace SimpleSurvey.WebMVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "SurveyId,SurveyTitle,SurveyDescription,StartDate,EndDate")] Survey survey)
+        public ActionResult Create(SurveyCreate survey)
         {
+            QuestionService _questionService = new QuestionService();
+            bool surveySaved = false;
+
+            Survey newSurvey = new Survey()
+            {
+                SurveyTitle = survey.SurveyTitle,
+                SurveyDescription = survey.SurveyDescription,
+                StartDate = survey.StartDate,
+                EndDate = survey.EndDate
+            };
+
             if (ModelState.IsValid)
             {
-                db.Surveys.Add(survey);
+                db.Surveys.Add(newSurvey);
                 db.SaveChanges();
+                surveySaved = true;
+            }
+
+            List<SurveyQuestion> surveyQuestions = new List<SurveyQuestion>();
+            int i = 0;
+            foreach (int questionId in survey.SelectedSurveyQuestions)
+            {
+                Question currQuestion = _questionService.GetQuestionById(questionId);
+                surveyQuestions.Add(new SurveyQuestion()
+                {
+                    QuestionId = questionId,
+                    SurveyId = newSurvey.SurveyId,
+                    Order = i
+                });
+
+                i++;
+            }
+
+            if(surveyQuestions.Count > 0)
+            {
+                db.SurveyQuestions.AddRange(surveyQuestions);
+                db.SaveChanges();
+            }
+
+            if (surveySaved)
+            {
                 return RedirectToAction("Index");
             }
 

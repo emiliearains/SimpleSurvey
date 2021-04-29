@@ -97,5 +97,14 @@ namespace SimpleSurvey.Services
           
         }
 
+        public List<Question> GetQuestionsBySurveyId(int surveyId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx.Questions.Where(x => ctx.SurveyQuestions.Where(y => y.SurveyId == surveyId).Select(z => z.QuestionId).Contains(x.QuestionId)).ToList();
+
+                return entity;
+            }
+        }
     }
 }
