@@ -9,6 +9,7 @@ namespace SimpleSurvey.Models
 {
     public class SurveyDetail
     {
+        public int SurveyId { get; set; }
         [Required]
         [MinLength(5, ErrorMessage = "Minimum survey title length is at least 5 characters.")]
         [MaxLength(100, ErrorMessage = "Maximum survey title length is 100 characters.")]

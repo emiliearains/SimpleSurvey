@@ -63,6 +63,7 @@
     <Compile Include="QuestionEdit.cs" />
     <Compile Include="QuestionListItem.cs" />
     <Compile Include="QuestionSelectList.cs" />
+    <Compile Include="QuestionTypeSelect.cs" />
     <Compile Include="SurveyCreate.cs" />
     <Compile Include="SurveyDetail.cs" />
     <Compile Include="SurveyEdit.cs" />

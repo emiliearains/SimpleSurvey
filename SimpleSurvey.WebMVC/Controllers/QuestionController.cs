@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using SimpleSurvey.Models;
 
 namespace SimpleSurvey.WebMVC.Controllers
 {
@@ -29,7 +30,8 @@ namespace SimpleSurvey.WebMVC.Controllers
 
         public ActionResult Create()
         {
-            
+            //List<QuestionTypeSelect> questionTypes = new List<QuestionTypeSelect>();
+            //forach (var type in QuestionType.
             return View();
         }
 
@@ -60,6 +62,7 @@ namespace SimpleSurvey.WebMVC.Controllers
             }).ToList();
             var model = new QuestionDetail
             {
+                QuestionId = question.QuestionId,
                 QuestionText = question.QuestionText,
                 QuestionType = Enum.GetName(typeof(QuestionType), question.QuestionType),
                 QuestionChoiceText = questionDetails

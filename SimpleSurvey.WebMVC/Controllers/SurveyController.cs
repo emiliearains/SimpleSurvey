@@ -50,7 +50,7 @@ namespace SimpleSurvey.WebMVC.Controllers
                 SurveyDescription = survey.SurveyDescription,
                 StartDate = survey.StartDate,
                 EndDate = survey.EndDate,
-                SurveyQuestions = questionDetails 
+                SurveyQuestions = questionDetails
             };
 
             if (survey == null)
