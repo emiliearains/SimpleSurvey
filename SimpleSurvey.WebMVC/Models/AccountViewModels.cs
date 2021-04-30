@@ -79,6 +79,13 @@ namespace SimpleSurvey.WebMVC.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int Department { get; set; }
+        public int JobTitle { get; set; }
+       
+        
     }
 
     public class ResetPasswordViewModel

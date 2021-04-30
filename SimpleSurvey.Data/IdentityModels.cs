@@ -10,21 +10,37 @@ using Microsoft.AspNet.Identity.EntityFramework;
 namespace SimpleSurvey.Data
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
+    public enum Department
+    {
+        Internal,
+        External,
+        HumanResources
+    }
+    public enum JobTitle
+    {
+        Programmer,
+        QualityAssurance,
+        Assistant,
+        Associate,
+        Director
+    }
+
     public class ApplicationUser : IdentityUser
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string DisplayName { get; set; }
         public bool IsAdmin { get; set; }
-        //public DateTime BirthDate { get; set; } = DateTime.Now;
-        public int GenderCode { get; set; }
-        public int Race { get; set; }
-        public int Ethnicity { get; set; }
-        public int PrimaryLanguage { get; set; }
-        public int Department { get; set; }
-        public int Group { get; set; }
-        public int Unit { get; set; }
+        public int? Department { get; set; }
+        public int JobTitle { get; set; }
 
+        // public int? Group { get; set; }
+        // public int? Unit { get; set; }
+        // public DateTime BirthDate { get; set; } = DateTime.Now;
+        // public int? GenderCode { get; set; }
+        // public int? Race { get; set; }
+        // public int? Ethnicity { get; set; }
+        // public int? PrimaryLanguage { get; set; }
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
@@ -52,6 +68,7 @@ namespace SimpleSurvey.Data
         public DbSet<SurveyQuestion> SurveyQuestions { get; set; }
         public DbSet<QuestionChoice> QuestionChoices { get; set; }
         public DbSet<UserAnswer> UserAnswers { get; set; }
+        //public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
