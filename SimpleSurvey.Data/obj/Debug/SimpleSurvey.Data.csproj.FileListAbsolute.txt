@@ -13,11 +13,11 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Dat
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.InitialMigration.resources
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.UpdateMigration.resources
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.QuestionTypeMigration.resources
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.QuestionIsActiveMigration.resources
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.SeedMigration.resources
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.QuestionTypeEnumMigration.resources
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csproj.GenerateResource.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.pdb
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.QuestionIsActiveMigration.resources
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.SeedMigration.resources
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.QuestionTypeEnumMigration.resources
