@@ -17,4 +17,4 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Dat
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.InitialCreate.resources
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csproj.GenerateResource.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.InitialMigration.resources
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.HandsOffMigration.resources
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.PleaseWorkMigration.resources

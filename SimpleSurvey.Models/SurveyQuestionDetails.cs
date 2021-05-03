@@ -8,5 +8,6 @@ namespace SimpleSurvey.Models
 {
     class SurveyQuestionDetails
     {
+
     }
 }
