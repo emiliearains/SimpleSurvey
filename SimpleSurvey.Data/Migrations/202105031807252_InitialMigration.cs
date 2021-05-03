@@ -1,9 +1,9 @@
-﻿namespace SimpleSurvey.Data.Migrations
+namespace SimpleSurvey.Data.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class InitialMigration : DbMigration
     {
         public override void Up()
         {
@@ -101,7 +101,7 @@
                 c => new
                     {
                         UserSurveyId = c.Int(nullable: false, identity: true),
-                        OwnerId = c.Guid(nullable: false),
+                        UserId = c.Guid(nullable: false),
                         SurveyId = c.Int(nullable: false),
                         DateCompleted = c.DateTime(nullable: false),
                     })

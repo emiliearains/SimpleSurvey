@@ -57,17 +57,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202104301927525_InitialCreate.cs" />
-    <Compile Include="Migrations\202104301927525_InitialCreate.designer.cs">
-      <DependentUpon>202104301927525_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202104301933534_InitialMigration.cs" />
-    <Compile Include="Migrations\202104301933534_InitialMigration.designer.cs">
-      <DependentUpon>202104301933534_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105031707459_PleaseWorkMigration.cs" />
-    <Compile Include="Migrations\202105031707459_PleaseWorkMigration.Designer.cs">
-      <DependentUpon>202105031707459_PleaseWorkMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202105031807252_InitialMigration.cs" />
+    <Compile Include="Migrations\202105031807252_InitialMigration.Designer.cs">
+      <DependentUpon>202105031807252_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,14 +75,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202104301927525_InitialCreate.resx">
-      <DependentUpon>202104301927525_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202104301933534_InitialMigration.resx">
-      <DependentUpon>202104301933534_InitialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105031707459_PleaseWorkMigration.resx">
-      <DependentUpon>202105031707459_PleaseWorkMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202105031807252_InitialMigration.resx">
+      <DependentUpon>202105031807252_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
