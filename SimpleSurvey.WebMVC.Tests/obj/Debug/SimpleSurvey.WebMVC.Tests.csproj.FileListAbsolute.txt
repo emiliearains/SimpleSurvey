@@ -61,7 +61,6 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\SimpleSu
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\SimpleSurvey.Services.dll.config
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\SimpleSurvey.Models.pdb
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\SimpleSurvey.Models.dll.config
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\System.Web.Http.WebHost.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.WebMVC.Tests\bin\Debug\Microsoft.Owin.Security.OAuth.xml

@@ -50,7 +50,8 @@ namespace SimpleSurvey.WebMVC.Controllers
                 SurveyDescription = survey.SurveyDescription,
                 StartDate = survey.StartDate,
                 EndDate = survey.EndDate,
-                SurveyQuestions = questionDetails
+                SurveyQuestions = questionDetails,
+                SurveyId = survey.SurveyId
             };
 
             if (survey == null)
@@ -183,6 +184,27 @@ namespace SimpleSurvey.WebMVC.Controllers
             db.Surveys.Remove(survey);
             db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        // GET: Survey
+        public ActionResult AssignUsersToSurvey(int? surveyId)
+        {
+            UserService userService = new UserService();
+
+            UserSurveyAssign model = new UserSurveyAssign();
+            model.SurveyId = surveyId ?? 0;
+
+            var userList = userService.GetUsers();
+            ViewBag.UserList = userList.Select(x => new UserSelectList
+            {
+               UserId = x.Id,
+               UserName = $"{x.LastName}, {x.FirstName}"
+
+            }).OrderBy(x => x.UserName);
+
+
+
+            return View(model);
         }
 
         protected override void Dispose(bool disposing)

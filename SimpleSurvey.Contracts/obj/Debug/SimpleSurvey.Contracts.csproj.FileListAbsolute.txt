@@ -9,7 +9,6 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Contracts\bin\Debug\EntityFrame
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Contracts\bin\Debug\EntityFramework.SqlServer.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Contracts\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Contracts\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Contracts\obj\Debug\SimpleSurvey.Contracts.csprojAssemblyReference.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Contracts\obj\Debug\SimpleSurvey.Contracts.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Contracts\obj\Debug\SimpleSurvey.Contracts.csproj.CopyComplete
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Contracts\obj\Debug\SimpleSurvey.Contracts.dll

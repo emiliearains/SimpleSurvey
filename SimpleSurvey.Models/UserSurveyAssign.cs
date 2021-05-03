@@ -8,8 +8,10 @@ namespace SimpleSurvey.Models
 {
     public class UserSurveyAssign
     {
-        public Guid UserId { get; set; }
+        public List<string> UserIds { get; set; }
 
         public int SurveyId { get; set; }
+        public int DepartmentId { get; set; }
+        public int JobTitleId { get; set; }
     }
 }

@@ -70,6 +70,7 @@
     <Compile Include="SurveyDetail.cs" />
     <Compile Include="SurveyEdit.cs" />
     <Compile Include="SurveyQuestionDetails.cs" />
+    <Compile Include="UserSelectList.cs" />
     <Compile Include="UserSurveyAssign.cs" />
   </ItemGroup>
   <ItemGroup>
