@@ -79,29 +79,58 @@ namespace SimpleSurvey.Services
         {
             List<QuestionChoice> questionChoices = new List<QuestionChoice>();
 
-            questionChoices.Add(new QuestionChoice() { QuestionChoiceText = "Strongly Agree", QuestionChoiceValue = 5, QuestionId = questionId });
+            questionChoices.Add(new QuestionChoice() 
+            { 
+                QuestionChoiceText = "Strongly Agree", 
+                QuestionChoiceValue = 5, 
+                QuestionId = questionId 
+            });
 
-            questionChoices.Add(new QuestionChoice() { QuestionChoiceText = "Agree", QuestionChoiceValue = 4, QuestionId = questionId });
+            questionChoices.Add(new QuestionChoice() 
+            { 
+                QuestionChoiceText = "Agree", 
+                QuestionChoiceValue = 4, 
+                QuestionId = questionId 
+            });
 
-            questionChoices.Add(new QuestionChoice() { QuestionChoiceText = "Neither Agree nor Disagree", QuestionChoiceValue = 3, QuestionId = questionId });
+            questionChoices.Add(new QuestionChoice() 
+            { 
+                QuestionChoiceText = "Neither Agree nor Disagree", 
+                QuestionChoiceValue = 3, 
+                QuestionId = questionId 
+            });
 
-            questionChoices.Add(new QuestionChoice() { QuestionChoiceText = "Disagree", QuestionChoiceValue = 2, QuestionId = questionId });
+            questionChoices.Add(new QuestionChoice() 
+            { 
+                QuestionChoiceText = "Disagree", 
+                QuestionChoiceValue = 2, 
+                QuestionId = questionId 
+            });
 
-            questionChoices.Add(new QuestionChoice() { QuestionChoiceText = "Strongly Disagree", QuestionChoiceValue = 1, QuestionId = questionId });
+            questionChoices.Add(new QuestionChoice() 
+            { 
+                QuestionChoiceText = "Strongly Disagree", 
+                QuestionChoiceValue = 1, 
+                QuestionId = questionId
+            });
 
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.QuestionChoices.AddRange(questionChoices);
                 return ctx.SaveChanges() == 1;
             }
-          
         }
 
         public List<Question> GetQuestionsBySurveyId(int surveyId)
         {
             using (var ctx = new ApplicationDbContext())
             {
-                var entity = ctx.Questions.Where(x => ctx.SurveyQuestions.Where(y => y.SurveyId == surveyId).Select(z => z.QuestionId).Contains(x.QuestionId)).ToList();
+                var entity = 
+                    ctx.Questions
+                        .Where(x => ctx.SurveyQuestions
+                        .Where(y => y.SurveyId == surveyId)
+                        .Select(z => z.QuestionId)
+                        .Contains(x.QuestionId)).ToList();
 
                 return entity;
             }

@@ -152,7 +152,13 @@ namespace SimpleSurvey.WebMVC.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { 
+                    FirstName = model.FirstName, 
+                    LastName = model.LastName,
+                    Department = model.Department,
+                    JobTitle = model.JobTitle,
+                    UserName = model.Email, 
+                    Email = model.Email };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {

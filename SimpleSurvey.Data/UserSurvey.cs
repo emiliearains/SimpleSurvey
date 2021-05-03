@@ -13,7 +13,7 @@ namespace SimpleSurvey.Data
         public int UserSurveyId { get; set; }
 
         [Required]
-        public Guid OwnerId { get; set; }
+        public Guid UserId { get; set; }
 
         [ForeignKey(nameof(Survey))]
         public int SurveyId { get; set; }
