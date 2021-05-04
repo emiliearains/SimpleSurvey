@@ -5,8 +5,99 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>AssignUsersToSurvey</h2>
+<h2>Assigning to SURVEY TITLE </h2>
 
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            @using (Html.BeginForm("AssignUsersToSurvey", "Survey", new { assignType = "User" }))
+            {
+                @Html.AntiForgeryToken()
+                    <h4>Assign By User(s)</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.SurveyId)
+                    <div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.UserIds, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.ListBoxFor(model => model.UserIds, new SelectList(ViewBag.UserList, "UserId", "UserName"))
+                                @Html.ValidationMessageFor(model => model.UserIds, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                @*<input type="submit" name="UserSubmit" value="Assign survey to these users" class="btn btn-default" />*@
+                                <button type="submit" value="UserSubmit">Assign survey to these users</button>
+                            </div>
+                        </div>
+                    </div>
+               
+            }
+        </div>
+        <div class="col-sm">
+            @using (Html.BeginForm("AssignUsersToSurvey", "Survey", new { assignType = "Department" }))
+            {
+                @Html.AntiForgeryToken()
+
+                
+
+                    <h4>Assign By Department</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.SurveyId)
+                    <div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.DepartmentId, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.DropDownListFor(model => model.DepartmentId, EnumHelper.GetSelectList(typeof(SimpleSurvey.Data.Department)), new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.DepartmentId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                @*<input type="submit" name="DepartmentSubmit" value="Assign survey to users in this department" class="btn btn-default">*@
+                                <button type="submit" value="DepartmentSubmit">Assign survey to users in this department</button>
+                            </div>
+                        </div>
+                    </div>
+                
+            }
+        </div>
+        <div class="col-sm">
+            @using (Html.BeginForm("AssignUsersToSurvey", "Survey", new { assignType = "JobTitle" }))
+            {
+                @Html.AntiForgeryToken()
+
+                
+
+                    <h4>Assign by Job Title</h4>
+                    <hr />
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.SurveyId)
+                    <div>
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.JobTitleId, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.DropDownListFor(model => model.JobTitleId, EnumHelper.GetSelectList(typeof(SimpleSurvey.Data.JobTitle)), new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.JobTitleId, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-offset-2 col-md-10">
+                                @*<input type="submit" name="DepartmentSubmit" value="Assign survey to users in this department" class="btn btn-default">*@
+                                <button type="submit" value="JobTitleSubmit">Assign survey to users with this job title</button>
+                            </div>
+                        </div>
+                    </div>
+                
+                }
+        </div>
+    </div>
+</div>
 
 @using (Html.BeginForm("AssignUsersToSurvey", "Survey", new { assignType = "User" }))
 {
