@@ -49,6 +49,22 @@ namespace SimpleSurvey.Services
             }
         }
 
+        public bool CreateUserSurvey(UserSurveyCreate model)
+        {
+            var entity =
+                new UserSurvey()
+                {
+                    SurveyId = model.SurveyId,
+                    UserId = model.UserId,
+                    DateCompleted = DateTime.Now.AddYears(-5)
+                };
+            using (var ctx = new ApplicationDbContext())
+            {
+                ctx.UserSurveys.Add(entity);
+                ctx.SaveChanges();
+            }
+            return true;
+        }
 
     }
 }

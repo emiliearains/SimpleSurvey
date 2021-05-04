@@ -202,9 +202,43 @@ namespace SimpleSurvey.WebMVC.Controllers
 
             }).OrderBy(x => x.UserName);
 
-
+            //ViewBag.DepartmentList = 
 
             return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult AssignUsersToSurvey(UserSurveyAssign userSurveyAssign, string assignType)
+        {
+            UserService userService = new UserService();
+            SurveyService surveyService = new SurveyService();
+
+            List<ApplicationUser> selectedUsers = new List<ApplicationUser>();
+
+            switch (assignType.ToUpper())
+            {
+                case "USER":
+                    selectedUsers = userService.GetUserByIdRange(userSurveyAssign.UserIds);
+                    break;
+                case "DEPARTMENT":
+                    selectedUsers = userService.GetUsersByDepartment(userSurveyAssign.DepartmentId);
+                    break;
+                case "JOBTITLE":
+                    selectedUsers =userService.GetUsersByJobTitle(userSurveyAssign.JobTitleId);
+                    break;
+            }
+
+            // Create UserSurvey records for each user in selectedUsers
+            foreach (var user in selectedUsers)
+            {
+                surveyService.CreateUserSurvey(new UserSurveyCreate
+                {
+                    SurveyId = userSurveyAssign.SurveyId,
+                    UserId = Guid.Parse(user.Id)
+                });
+            }
+
+            return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)

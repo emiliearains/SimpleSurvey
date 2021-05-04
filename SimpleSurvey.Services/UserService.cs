@@ -10,10 +10,17 @@ namespace SimpleSurvey.Services
 {
     public class UserService
     {
+        private readonly Guid _userId;
+
         public UserService()
         {
-
         }
+
+        //public bool AssignUsersToSurvey()
+
+
+
+
 
         // GET all active users
         public IEnumerable<ApplicationUser> GetUsers()
@@ -41,5 +48,46 @@ namespace SimpleSurvey.Services
             }
         }
 
+        // GET users by id range
+        public List<ApplicationUser> GetUserByIdRange(List<string> idList)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Users
+                        .Where(x => idList.Contains(x.Id))
+                        .ToList();
+                return entity;
+            }
+        }
+
+        // GET users by department
+        public List<ApplicationUser> GetUsersByDepartment(int departmentId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Users
+                        .Where(x => x.Department == departmentId)
+                        .ToList();
+                return entity;
+            }
+        }
+
+        // GET users by job title
+        public List<ApplicationUser> GetUsersByJobTitle(int jobTitleId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .Users
+                        .Where(x => x.JobTitle == jobTitleId)
+                        .ToList();
+                return entity;
+            }
+        }
     }
 }
