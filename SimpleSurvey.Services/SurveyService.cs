@@ -49,14 +49,26 @@ namespace SimpleSurvey.Services
             }
         }
 
+        public List<UserSurvey> GetOpenSurveysByUserId(string id)
+        {
+            var userId = Guid.Parse(id);
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .UserSurveys
+                        .Where(e => e.UserId == userId && e.DateCompleted == null).ToList();
+                return entity;
+            }
+        }
+
         public bool CreateUserSurvey(UserSurveyCreate model)
         {
             var entity =
                 new UserSurvey()
                 {
                     SurveyId = model.SurveyId,
-                    UserId = model.UserId,
-                    DateCompleted = DateTime.Now.AddYears(-5)
+                    UserId = model.UserId
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -66,5 +78,50 @@ namespace SimpleSurvey.Services
             return true;
         }
 
+        public bool CreateSurveyAnswer(int userSurveyId, int questionChoiceId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                ctx.UserAnswers.Add(new UserAnswer
+                {
+                    UserSurveyId = userSurveyId,
+                    QuestionChoiceId = questionChoiceId
+                });
+                ctx.SaveChanges();
+            }
+            return true;
+        }
+        public bool CompleteUserSurvey(int userSurveyId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var userSurvey = ctx.UserSurveys
+                    .Single(x => x.UserSurveyId == userSurveyId);
+                userSurvey.DateCompleted = DateTime.Now;
+                ctx.SaveChanges();
+            }
+            return true;
+
+        }
+
+        public UserSurvey GetUserSurveyById(int userSurveyId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx.UserSurveys
+                    .Single(x => x.UserSurveyId == userSurveyId);
+                return entity;
+            }
+        }
+        public UserSurvey GetUserSurvey(string userId, int surveyId)
+        {
+            Guid userIdGuid = Guid.Parse(userId);
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx.UserSurveys
+                    .Single(x => x.UserId == userIdGuid && x.SurveyId == surveyId);
+                return entity;
+            }
+        }
     }
 }

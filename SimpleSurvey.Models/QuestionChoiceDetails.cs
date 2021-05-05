@@ -23,5 +23,6 @@ namespace SimpleSurvey.Models
         [Required]
         [Range(1, 5, ErrorMessage = "Select a value between 1 and 5.")]
         public int QuestionChoiceValue { get; set; }
+        public int QuestionChoiceId { get; set; }
     }
 }

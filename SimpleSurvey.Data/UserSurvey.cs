@@ -19,6 +19,6 @@ namespace SimpleSurvey.Data
         public int SurveyId { get; set; }
         public virtual Survey Survey { get; set; }
 
-        public DateTime DateCompleted { get; set; }
+        public DateTime? DateCompleted { get; set; }
     }
 }

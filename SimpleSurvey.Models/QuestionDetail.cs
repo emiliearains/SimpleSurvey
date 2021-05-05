@@ -14,5 +14,6 @@ namespace SimpleSurvey.Models
         public string QuestionType { get; set; }
         [Display(Name = "Question Choices")]
         public List<QuestionChoiceDetails> QuestionChoiceText { get; set; }
+        public int SelectedChoice { get; set; }
     }
 }

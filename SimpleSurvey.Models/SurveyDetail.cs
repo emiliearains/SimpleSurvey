@@ -26,5 +26,6 @@ namespace SimpleSurvey.Models
         public DateTime EndDate { get; set; }
 
         public List<QuestionDetail> SurveyQuestions { get; set; }
+        public int UserSurveyId { get; set; }
     }
 }

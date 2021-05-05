@@ -16,3 +16,4 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Dat
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csprojAssemblyReference.cache
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.InitialMigration.resources
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csproj.GenerateResource.cache
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.NullableDateCompletedMigration.resources

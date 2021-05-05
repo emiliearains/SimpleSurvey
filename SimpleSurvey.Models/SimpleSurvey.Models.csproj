@@ -73,6 +73,7 @@
     <Compile Include="UserSelectList.cs" />
     <Compile Include="UserSurveyAssign.cs" />
     <Compile Include="UserSurveyCreate.cs" />
+    <Compile Include="UserSurveyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
