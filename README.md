@@ -26,16 +26,15 @@ Pull requests are welcome. For major changes, please email emiliearains@gmail.co
 Please make sure to update tests as appropriate.
 
 ## Resources Used
-[WebsiteName](link)
-[Things I've Learned About Writing Good READMEs](https://github.com/noffle/art-of-readme#readme)
-[Survey Web App Using ASP.NET MVC 4, Entity Framework 5  ](https://www.codeproject.com/Articles/584161/Survey-Web-App-Using-ASP-NET-MVC-4-Entity-Framewor)
-[Simple ASP.NET Survey Application ](https://www.c-sharpcorner.com/uploadfile/a185f3/asp-net-simple-survey-application/)
+- [Things I've Learned About Writing Good READMEs](https://github.com/noffle/art-of-readme#readme)
+- [Survey Web App Using ASP.NET MVC 4, Entity Framework 5  ](https://www.codeproject.com/Articles/584161/Survey-Web-App-Using-ASP-NET-MVC-4-Entity-Framewor)
+- [Simple ASP.NET Survey Application ](https://www.c-sharpcorner.com/uploadfile/a185f3/asp-net-simple-survey-application/)
 
-[DataAnnotations - ForeignKey Attribute in EF 7 & EF](https://www.entityframeworktutorial.net/code-first/foreignkey-dataannotations-attribute-in-code-first.aspx)
+- [DataAnnotations - ForeignKey Attribute in EF 7 & EF](https://www.entityframeworktutorial.net/code-first/foreignkey-dataannotations-attribute-in-code-first.aspx)
 
-[Radio Buttons: Question Creation And Modification - SJSU - School of Information](https://ischool.sjsu.edu/phpquestionnaire-radio-question)
-[Working With Radio Buttons in ASP.NET Razor Pages ](https://www.learnrazorpages.com/razor-pages/forms/radios)
-[ASP.NET MVC Multiple Radiobutton Forms ](https://stackoverflow.com/questions/34290147/asp-net-mvc-multiple-radiobutton-forms)
+- [Radio Buttons: Question Creation And Modification - SJSU - School of Information](https://ischool.sjsu.edu/phpquestionnaire-radio-question)
+- [Working With Radio Buttons in ASP.NET Razor Pages ](https://www.learnrazorpages.com/razor-pages/forms/radios)
+- [ASP.NET MVC Multiple Radiobutton Forms ](https://stackoverflow.com/questions/34290147/asp-net-mvc-multiple-radiobutton-forms)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
