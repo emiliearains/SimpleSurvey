@@ -67,5 +67,6 @@
 </div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.SurveyId }) |
+    @Html.ActionLink("Assign Users To Survey", "AssignUsersToSurvey", new { surveyId = Model.SurveyId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
