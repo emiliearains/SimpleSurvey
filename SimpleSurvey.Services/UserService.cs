@@ -15,13 +15,6 @@ namespace SimpleSurvey.Services
         public UserService()
         {
         }
-
-        
-
-
-
-
-
         // GET all active users
         public IEnumerable<ApplicationUser> GetUsers()
         {
