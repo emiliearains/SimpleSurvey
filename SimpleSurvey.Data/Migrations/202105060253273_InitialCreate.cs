@@ -3,7 +3,7 @@ namespace SimpleSurvey.Data.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialMigration : DbMigration
+    public partial class InitialCreate : DbMigration
     {
         public override void Up()
         {
@@ -103,7 +103,7 @@ namespace SimpleSurvey.Data.Migrations
                         UserSurveyId = c.Int(nullable: false, identity: true),
                         UserId = c.Guid(nullable: false),
                         SurveyId = c.Int(nullable: false),
-                        DateCompleted = c.DateTime(nullable: false),
+                        DateCompleted = c.DateTime(),
                     })
                 .PrimaryKey(t => t.UserSurveyId)
                 .ForeignKey("dbo.Survey", t => t.SurveyId, cascadeDelete: true)

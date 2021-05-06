@@ -75,6 +75,19 @@ namespace SimpleSurvey.Services
             }
         }
 
+        public QuestionChoice GetQuestionChoiceById(int questionChoiceId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                        .QuestionChoices
+                        .Single(x => x.QuestionChoiceId == questionChoiceId);
+                        
+                        return entity;
+            }
+        }
+
         private bool PopulateQuestionChoices(int questionId)
         {
             List<QuestionChoice> questionChoices = new List<QuestionChoice>();

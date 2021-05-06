@@ -91,6 +91,7 @@ namespace SimpleSurvey.Services
             }
             return true;
         }
+
         public bool CompleteUserSurvey(int userSurveyId)
         {
             using (var ctx = new ApplicationDbContext())
@@ -102,6 +103,16 @@ namespace SimpleSurvey.Services
             }
             return true;
 
+        }
+
+        public List<UserSurvey> GetCompletedUserSurveysBySurveyId(int surveyId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var UserSurvey = ctx.UserSurveys
+                    .Where(x => x.DateCompleted != null && x.SurveyId == surveyId).ToList();
+                return UserSurvey;
+            }
         }
 
         public UserSurvey GetUserSurveyById(int userSurveyId)
@@ -120,6 +131,17 @@ namespace SimpleSurvey.Services
             {
                 var entity = ctx.UserSurveys
                     .Single(x => x.UserId == userIdGuid && x.SurveyId == surveyId);
+                return entity;
+            }
+        }
+
+        public List<UserAnswer> GetUserAnswersByUserSurveyId(int userSurveyId)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx.UserAnswers
+                    .Where(x => x.UserSurveyId == userSurveyId)
+                    .ToList();
                 return entity;
             }
         }

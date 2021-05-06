@@ -57,17 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202105031807252_InitialMigration.cs" />
-    <Compile Include="Migrations\202105031807252_InitialMigration.Designer.cs">
-      <DependentUpon>202105031807252_InitialMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202105060253273_InitialCreate.cs" />
+    <Compile Include="Migrations\202105060253273_InitialCreate.Designer.cs">
+      <DependentUpon>202105060253273_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202105050132441_NullableDateCompletedMigration.cs" />
-    <Compile Include="Migrations\202105050132441_NullableDateCompletedMigration.Designer.cs">
-      <DependentUpon>202105050132441_NullableDateCompletedMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202105060232230_HailMaryMigration.cs" />
-    <Compile Include="Migrations\202105060232230_HailMaryMigration.Designer.cs">
-      <DependentUpon>202105060232230_HailMaryMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202105060307195_InitialMigration.cs" />
+    <Compile Include="Migrations\202105060307195_InitialMigration.Designer.cs">
+      <DependentUpon>202105060307195_InitialMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,14 +79,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202105031807252_InitialMigration.resx">
-      <DependentUpon>202105031807252_InitialMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202105060253273_InitialCreate.resx">
+      <DependentUpon>202105060253273_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105050132441_NullableDateCompletedMigration.resx">
-      <DependentUpon>202105050132441_NullableDateCompletedMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202105060232230_HailMaryMigration.resx">
-      <DependentUpon>202105060232230_HailMaryMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202105060307195_InitialMigration.resx">
+      <DependentUpon>202105060307195_InitialMigration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

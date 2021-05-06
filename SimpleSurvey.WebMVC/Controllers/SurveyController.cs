@@ -241,6 +241,101 @@ namespace SimpleSurvey.WebMVC.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult UserSurveyCompleted(int surveyId)
+        {
+            UserService userService = new UserService();
+            SurveyService surveyService = new SurveyService();
+            var completedUserSurveys = surveyService.GetCompletedUserSurveysBySurveyId(surveyId);
+            List<UserSurveyCompleted> model = new List<UserSurveyCompleted>();
+            foreach (var survey in completedUserSurveys)
+            {
+                var user = userService.GetUserById(survey.UserId.ToString());
+                model.Add(new UserSurveyCompleted
+                {
+                    UserSurveyId = survey.UserSurveyId,
+                    UserName = $"{user.FirstName} {user.LastName}",
+                    DateCompleted = survey.DateCompleted ?? new DateTime()
+                });
+            }
+            return View(model);
+
+        }
+
+        public ActionResult UserSurveyCompletedDetails(int userSurveyId)
+        {
+            QuestionService _questionService = new QuestionService();
+            SurveyService _surveyService = new SurveyService();
+
+            if (userSurveyId == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            UserSurvey userSurvey = _surveyService.GetUserSurveyById(userSurveyId);
+            Survey survey = _surveyService.GetSurveyById(userSurvey.SurveyId);
+            List<UserAnswer> userAnswers = _surveyService.GetUserAnswersByUserSurveyId(userSurveyId);
+            //List<Question> questions = _questionService.GetQuestionsBySurveyId(survey.SurveyId);
+            List<QuestionDetail> questionDetails = new List<QuestionDetail>();
+            foreach (var answer in userAnswers)
+            {
+                var questionChoice = _questionService.GetQuestionChoiceById(answer.QuestionChoiceId);
+                var question = _questionService.GetQuestionById(questionChoice.QuestionId);
+                List<QuestionChoiceDetails> questionChoiceDetails = new List<QuestionChoiceDetails>();
+                questionChoiceDetails.Add(new QuestionChoiceDetails
+                {
+                    QuestionChoiceText = questionChoice.QuestionChoiceText,
+                    QuestionChoiceValue = questionChoice.QuestionChoiceValue,
+                    QuestionChoiceId = questionChoice.QuestionChoiceId
+                });
+
+                
+                questionDetails.Add(new QuestionDetail
+                {
+                    QuestionText = question.QuestionText,
+                    QuestionId = question.QuestionId,
+                    QuestionType = Enum.GetName(typeof(QuestionType), question.QuestionType),
+                    QuestionChoiceText = questionChoiceDetails
+                });
+            }
+
+
+            //List<QuestionDetail> questionDetails = userAnswers.Select(x => new QuestionDetail()
+            //{
+            //    QuestionText = x.QuestionChoice.Question.QuestionText,
+            //    QuestionId = x.QuestionChoice.QuestionId,
+            //    QuestionType = Enum.GetName(typeof(QuestionType), x.QuestionChoice.Question.QuestionType),
+            //    QuestionChoiceText = new List<QuestionChoiceDetails>() { new QuestionChoiceDetails
+            //    {
+            //        QuestionChoiceText = x.QuestionChoice.QuestionChoiceText,
+            //        QuestionChoiceValue = x.QuestionChoice.QuestionChoiceValue,
+            //        QuestionChoiceId = x.QuestionChoiceId
+            //    }}
+                
+            //    //_questionService.GetQuestionChoiceById()
+            //    //                                        .Select(y => new QuestionChoiceDetails()
+            //    //                                        {
+            //    //                                            QuestionChoiceText = y.QuestionChoiceText,
+            //    //                                            QuestionChoiceValue = y.QuestionChoiceValue,
+            //    //                                            QuestionChoiceId = y.QuestionChoiceId
+            //    //                                        }).ToList()
+            //}).ToList();
+
+            SurveyDetail surveyDetail = new SurveyDetail()
+            {
+                SurveyTitle = survey.SurveyTitle,
+                SurveyDescription = survey.SurveyDescription,
+                StartDate = survey.StartDate,
+                EndDate = survey.EndDate,
+                SurveyQuestions = questionDetails,
+                SurveyId = survey.SurveyId,
+                UserSurveyId = userSurvey.UserSurveyId
+            };
+
+            if (survey == null)
+            {
+                return HttpNotFound();
+            }
+            return View(surveyDetail);
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)
