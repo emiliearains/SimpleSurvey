@@ -16,5 +16,4 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Release\SimpleSurvey.D
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Release\SimpleSurvey.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Release\SimpleSurvey.Data.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Release\SimpleSurvey.Data.pdb
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Release\SimpleSurvey.Data.Migrations.NullableDateCompletedMigration.resources
-C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Release\SimpleSurvey.Data.Migrations.HailMaryMigration.resources
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Release\SimpleSurvey.Data.Migrations.InitialCreate.resources

@@ -1,0 +1,79 @@
+﻿@model SimpleSurvey.Models.SurveyDetail
+
+@{
+    ViewBag.Title = "UserSurveyCompletedDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>UserSurveyCompletedDetails</h2>
+
+<div>
+    <h4>SurveyDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SurveyId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurveyId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurveyTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurveyTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurveyDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurveyDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StartDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StartDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EndDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EndDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserSurveyId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserSurveyId)
+        </dd>
+        <dd>
+            <ol>
+                @foreach (var questionDetail in Model.SurveyQuestions)
+                {
+                    <li><div>@questionDetail.QuestionText</div></li>
+                    <ol type="a">
+                        @foreach (var questionChoice in questionDetail.QuestionChoiceText)
+                        {
+                            <li><div>@questionChoice.QuestionChoiceText</div></li>
+                        }
+                    </ol>
+                }
+            </ol>
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
