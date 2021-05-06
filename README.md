@@ -8,7 +8,9 @@ This is designed for an administrator to
      - to users, 
      - by department 
      - by job title
-
+ - view and take assigned surveys
+ - view completed surveys
+ 
 ## Installation
 
 To run this program, you will need:
@@ -18,8 +20,32 @@ To run this program, you will need:
 
 ## Usage
 
+FLOW Notes: Register user -> Create Question -> Create Survey -> View Survey Details to Assign Survey to User -> My Surveys -> Take Survey -> View Completed  
+
+1.  In the NAVBAR, register by entering First Name, Last Name, Department, Job Title, Email, Password, Confirm Password and click the Register button.
+
+2.  In the NAVBAR, select "Question" to create a new question. Enter question text and select question type from a drop down menu. 
+  - Current question TYPE options: Open Ended, Multiple Choice, Ordinal, Interval, Ratio. 
+  - Future functionality for question CHOICE will be added for these question TYPES
+    - Question Edit: Only for indicating if a question is active. For data integrity: not able to edit question text.)
+    - Question Detail: Question Choices are currently limited to:
+      - Strongly Agree
+      - Agree
+      - Neither Agree Nor Disagree
+      - Disagree
+      - Strongly Disagree
+
+3. In the NAVBAR, select "Survey" to create a new survey. Enter Survey Title, Survey Description, StartDate, EndDate, and select questions from the list box. Multiple questions can be selected at once. For data integrity, once questions are added to a survey, they are unable to be changed.
+
+4. From the Survey Index, surveys can be assigned to users by selecting Details. 
 
 
+Note: at this time, all users have the ability to assign surveys to users and view completed. 
+- In the future, admin roles and various user permissions will be established.
+
+Note: A user can only complete one instance of a survey. Application will break if a user tries to take the same version of a survey. 
+
+    
 
 ## Contributing
 Pull requests are welcome. For major changes, please email emiliearains@gmail.com first to discuss what you would like to change.
