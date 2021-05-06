@@ -17,3 +17,4 @@ C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Dat
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.dll
 C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.pdb
+C:\ElevenFiftyProjects\SimpleSurvey\SimpleSurvey.Data\obj\Debug\SimpleSurvey.Data.Migrations.HailMaryMigration.resources

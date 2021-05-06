@@ -1,0 +1,67 @@
+﻿@model SimpleSurvey.Models.SurveyDetail
+
+@{
+    ViewBag.Title = "TakeSurvey";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>TakeSurvey</h2>
+
+@using (Html.BeginForm("TakeSurvey", "UserSurvey"))
+{
+    @Html.AntiForgeryToken()
+<div>
+    <h4>SurveyDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @Html.HiddenFor(model => model.SurveyId)
+        @Html.HiddenFor(model => model.UserSurveyId)
+        <dt>
+            @Html.DisplayNameFor(model => model.SurveyTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurveyTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SurveyDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SurveyDescription)
+        </dd>
+
+        <dd>
+            
+            <ol>
+                @for (var i = 0; i < Model.SurveyQuestions.Count(); i++)
+                {
+                    @Html.HiddenFor(model => model.SurveyQuestions[i].QuestionId)
+                    <li>
+                    <label>@Model.SurveyQuestions[i].QuestionText</label>
+                    <ol>
+                    @for (var j = 0; j < Model.SurveyQuestions[i].QuestionChoiceText.Count(); j++)
+                    {
+                        <li>
+                            <input type="radio" id="Question@(i)Answer@(j)"value=@Model.SurveyQuestions[i].QuestionChoiceText[j].QuestionChoiceId
+                                   name=@Html.NameFor(model => model.SurveyQuestions[i].SelectedChoice) />
+                            @*@Html.RadioButtonFor(model => model.SurveyTitle, Model.SurveyQuestions[i].QuestionChoiceText[j].QuestionChoiceId, new { id='Question@iAnswer@j' })*@
+                        <label for="Question@(i)Answer@(j)">@Model.SurveyQuestions[i].QuestionChoiceText[j].QuestionChoiceText </label>
+                        </li>
+                    }
+                        </ol>
+                </li>
+                }
+            </ol>
+        </dd>
+
+    </dl>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            @*<input type="submit" name="UserSubmit" value="Assign survey to these users" class="btn btn-default" />*@
+            <button type="submit">Submit Survey</button>
+        </div>
+    </div>
+</div>
+}
